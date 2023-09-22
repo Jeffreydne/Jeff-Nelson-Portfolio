@@ -11,8 +11,14 @@
     /* font-size: 75%; */
     background-color: dodgerblue;
     padding: 10px;
+    width: 100%;
+    position: fixed;
+    top: 0;
   }
-
+  .navBar-container {
+    display: flex;
+    justify-content: space-between;
+  }
   .align-left {
     display: flex;
     justify-content: flex-start;
@@ -24,7 +30,12 @@
   #header-name {
     margin-left: 15px;
   }
-
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 20px;
+  }
   h1, h2 {
     font-family: Georgia, serif;
     text-align: center;
@@ -36,4 +47,10 @@
   
   h2 {
     font-size: 150%; 
+  }
+  footer {
+    background-color: dodgerblue;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
   }
