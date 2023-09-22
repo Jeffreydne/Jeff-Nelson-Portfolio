@@ -6,8 +6,25 @@
   body {
     font: 16px Helvetica, Verdana, sans-serif;
     background-color: #ababab;
-
   }
+  header {
+    /* font-size: 75%; */
+    background-color: dodgerblue;
+    padding: 10px;
+  }
+
+  .align-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  img {
+    border-radius: 50%;
+  }
+  #header-name {
+    margin-left: 15px;
+  }
+
   h1, h2 {
     font-family: Georgia, serif;
     text-align: center;
