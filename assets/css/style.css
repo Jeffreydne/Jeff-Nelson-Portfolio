@@ -6,6 +6,7 @@
   body {
     font: 16px Helvetica, Verdana, sans-serif;
     background-color: #ababab;
+    color: navy;
   }
   header {
     /* font-size: 75%; */
@@ -36,6 +37,9 @@
     justify-content: space-around;
     margin-right: 20px;
   }
+  a {
+    color: navy;
+  }
   h1, h2 {
     font-family: Georgia, serif;
     text-align: center;
@@ -43,6 +47,12 @@
   h1 {
       margin-top: 150px;
       font-size: 250%;
+  }
+  #main-head {
+    margin: 30px 0;
+  }
+  p {
+    margin: 20px 30px;
   }
   
   h2 {
