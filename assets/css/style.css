@@ -25,7 +25,7 @@
     justify-content: flex-start;
     align-items: center;
   }
-  img {
+  #profile-img {
     border-radius: 50%;
   }
   #header-name {
@@ -54,7 +54,15 @@
   p {
     margin: 20px 30px;
   }
-  
+  a img {
+    width: 80%;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   h2 {
     font-size: 150%; 
   }
