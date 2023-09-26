@@ -8,6 +8,7 @@
     background-color: #ababab;
     color: navy;
   }
+  /* header will be fixed to top of window with position fixed*/
   header {
     /* font-size: 75%; */
     background-color: dodgerblue;
@@ -16,10 +17,12 @@
     position: fixed;
     top: 0;
   }
+  /* navbar container allows contents to align at left and right of header. Will use media queries to align vertically at smaller screen size.*/
   .navBar-container {
     display: flex;
     justify-content: space-between;
   }
+  /* align-left div is also a flex box allowing header-name div (containing my name & info) to align to the right of the profile photo at al screen sizes  */
   .align-left {
     display: flex;
     justify-content: flex-start;
@@ -31,6 +34,7 @@
   #header-name {
     margin-left: 15px;
   }
+  /* nav element will be a verticle flex-box at all screen sizes, alowing links to be displayed vertically.  */
   nav {
     display: flex;
     flex-direction: column;
@@ -40,17 +44,21 @@
   a {
     color: navy;
   }
+  /* h1 & h2 for the page will be aligned center as block level elements inside the main-head div*/
   h1, h2 {
     font-family: Georgia, serif;
     text-align: center;
   }
+  /* margin top needed to keep entire header visible below the fixed header */
   h1 {
       margin-top: 150px;
       font-size: 250%;
   }
+  /* main-head margin allows h1 and h2 to display beneath the fixed header */
   #main-head {
     margin: 30px 0;
   }
+  /* class card divs allow the card elements (headline, image & description) to align vertically using flexbox.  */
   .card {
     display:flex;
     flex-direction: column;
@@ -58,7 +66,6 @@
     align-items: center;
     border: 2px double navy;
     margin: 10px;
-    /* align-items: center; */
   }
   .card-header, .card-footer {
     width: 70%;
@@ -74,6 +81,7 @@
   a img {
     width: 80%;
   }
+  /* card-container div holds all 3 projects. The small-car-container below will hold the 2 non-featured projects & flex them horizontally at large screen sizes, changing to vertical at mobile size  */
   .card-container {
     display: flex;
     flex-direction: column;
@@ -97,6 +105,7 @@
     width: 100%;
     text-align: center;
   }
+  /* the non-featured projects and nav-bar contents will both align vertically at smaller screen sizes */
   @media screen and (max-width: 600px) {
     .small-card-container {
         flex-direction: column;
@@ -106,6 +115,7 @@
         justify-content: center;
         align-items: center;
       }
+      /* at smaller screen widths additional top margin is needed to keep main element visible below the fixed header */
       h1 {
         margin-top: 180px;
       }

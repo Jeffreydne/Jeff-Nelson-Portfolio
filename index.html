@@ -7,22 +7,28 @@
     <title>Jeff Nelson Portfolio</title>
 </head>
 <body>
+    <!--header will be fixed to top of window with position fixed-->
     <header>
         <div class="navBar-container">
+            <!-- navbar container allows contents to align at left and right of header. Will use media queries to align vertically at smaller screen size. -->
             <div class="align-left">
+                <!-- align-left div is also a flex box allowing header-name div (containing my name & info) to align to the right of the profile photo at al screen sizes -->
                 <img id="profile-img" src="./assets/images/portfolio-photo.jpg" alt="Headshot of Jeff Nelson" width="100px" height="100" />
                 <div id="header-name">
                     <p>Jeff Nelson</p>
                     <p>Full Stack Software Developer</p>
                 </div>
             </div>
+            <!--nav element will be a verticle flex-box at all screen sizes, alowing links to be displayed vertically. -->
             <nav>
+                <!-- This can be fixed later with javascript. For now, scroll to main-head, projects-scroll and contact ids allows the entire about, projects, and contacts to appear when applicable navLink is clicked -->
                 <a href="#main-head">About Me</a>
                 <a href="#projects-scroll">My Projects</a>
                 <a href="#contact">Contact Me</a>
             </nav>
         </div>
     </header>
+    <!-- main element will have 3 block level elements: main-head div which contains h1 & h2, followed by 2 sections- one #about with info about me, & the 2nd #projects which will be the container for my projects. These will stack as block level elements at all screen widths -->
     <main>
         <div id="main-head">
             <h1>Hi, I'm Jeff Nelson</h1>
@@ -36,7 +42,9 @@
         </section>
         <section id="projects">
             <h2>My Projects</h2>
+            <!-- card-container div holds all 3 projects. The small-car-container below will hold the 2 non-featured projects & flex them horizontally at large screen sizes, changing to vertical at mobile size  -->
             <div class="card-container">
+                <!-- class card divs allow the card elements (card-header, atag with image & card-footer with description) to align vertically using flexbox. -->
                 <div class="card">
                     <p class="card-header">Fun WIth National Parks</p>
                     <a href="https://jeffreydne.github.io/national-park-blog-yellowstone/"><img id="featured-project" src="./assets/images/NPSwebsite.png" alt="National Park Blog (featuring Yellowstone)"/></a>
