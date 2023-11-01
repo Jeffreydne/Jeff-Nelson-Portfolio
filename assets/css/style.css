@@ -81,6 +81,26 @@
   a img {
     width: 80%;
   }
+
+  /* need to fix this */
+
+  a:hover::before {
+    content: "Click anywhere on the national park project to be taken to the actual site." ;
+    display: block;
+    border: 2px solid navy;
+    background-color: navy;
+    color: white;
+    height: 200px;
+    transform: translate(100px);
+    /* position: relative;
+    top: -30px;
+    right: 0px; */
+    width: 100px;
+    z-index: 1;
+    } 
+
+  /* ***** end fix ***** */
+
   /* card-container div holds all 3 projects. The small-car-container below will hold the 2 non-featured projects & flex them horizontally at large screen sizes, changing to vertical at mobile size  */
   .card-container {
     display: flex;
