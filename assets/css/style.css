@@ -102,10 +102,20 @@
     color: white;
     height: 150px;
     width: 120px; 
-    transform: translate(120px);  
+    animation: shiftImg 5s infinite;
+    /* transform: translate(120px);   */
     z-index: 1;
     } 
-
+    @keyframes shiftImg {
+      0% {
+        transform: translate(0);  
+        
+      }
+      100% {
+        transform: translate(120px);  
+        ;
+      }
+    }
   /* card-container div holds all 3 projects. The small-car-container below will hold the 2 non-featured projects & flex them horizontally at large screen sizes, changing to vertical at mobile size  */
   .card-container {
     display: flex;
