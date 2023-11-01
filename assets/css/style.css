@@ -93,9 +93,7 @@
   .nps:hover::before {
     transition: all 1s ease-in-out;
   }
-  /* .nps {
-    position: relative;
-  } */
+
   .nps:hover::before {
     content: "Click anywhere on the national park project to be taken to the actual site." ;
     display: block;
@@ -104,10 +102,7 @@
     color: white;
     height: 150px;
     width: 120px; 
-    transform: translate(120px);    
-    /* position: relative;
-    left: 120px; */
-   
+    transform: translate(120px);  
     z-index: 1;
     } 
 
