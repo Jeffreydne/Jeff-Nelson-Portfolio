@@ -32,6 +32,7 @@
     border-radius: 50%;
     transition: all 1s ease-in-out;
   }
+  /* use hover pseudo-element to translate my profile photo to right when hovered over. Transition is used in actual element to animate this process  */
   #profile-img:hover {
     transform: translate(400px);
   }

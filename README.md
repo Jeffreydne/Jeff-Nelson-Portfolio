@@ -91,5 +91,6 @@ During the making of this portfolio I implemented HTML and CSS keeping in mind a
 
 ---
 ## Credits
+Note: I started this project in September 2023 while in the UCB Fulltime Bootcamp. I transferred after one week.
 
 The table of technology used  in this README.md was provided by the excellent staff at UC Berkeley Extension Full Stack Bootcamp
