@@ -30,6 +30,10 @@
   }
   #profile-img {
     border-radius: 50%;
+    transition: all 1s ease-in-out;
+  }
+  #profile-img:hover {
+    transform: translate(400px);
   }
   #header-name {
     margin-left: 15px;
