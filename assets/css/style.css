@@ -50,6 +50,9 @@
   a {
     color: navy;
   }
+  nav a {
+    text-decoration: none;
+  }
   /* h1 & h2 for the page will be aligned center as block level elements inside the main-head div*/
   h1, h2 {
     font-family: Georgia, serif;
