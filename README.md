@@ -76,6 +76,8 @@ During the making of this portfolio I implemented HTML and CSS keeping in mind a
 * Currently the featured project site is larger than the others unless the screen width is narrower than 600px. This is acheived by putting the 2 non-featured projects in a separate division, aligning them in a row, with each project taking a width of 40%. The featured projecct is then aligned with the container division of the smaller projects using a flex direction column.  
 
 * I made use of the anchor tag to allow the user to click on the image of the featured site to get sent to the deployed website.  
+
+* I used the :hover pseudo-class, the ::before pseudo element and the transform css property to let a box appear explaining the project image can be clicked on to open the actual site in the browser.
 ---
 
 ## Author Info

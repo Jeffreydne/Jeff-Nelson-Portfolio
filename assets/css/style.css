@@ -16,6 +16,7 @@
     width: 100%;
     position: fixed;
     top: 0;
+    z-index: 3;
   }
   /* navbar container allows contents to align at left and right of header. Will use media queries to align vertically at smaller screen size.*/
   .navBar-container {
@@ -86,19 +87,24 @@
   a img {
     width: 80%;
   }
-
+  .nps:hover::before {
+    transition: all 1s ease-in-out;
+  }
+  /* .nps {
+    position: relative;
+  } */
   .nps:hover::before {
     content: "Click anywhere on the national park project to be taken to the actual site." ;
     display: block;
     border: 2px solid navy;
     background-color: navy;
     color: white;
-    height: 200px;
-    transform: translate(100px);
+    height: 150px;
+    width: 120px; 
+    transform: translate(120px);    
     /* position: relative;
-    top: -30px;
-    right: 0px; */
-    width: 100px;
+    left: 120px; */
+   
     z-index: 1;
     } 
 
