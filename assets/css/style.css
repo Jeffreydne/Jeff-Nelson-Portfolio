@@ -37,7 +37,7 @@
   }
   /* use hover pseudo-element to translate my profile photo to right when hovered over. Transition is used in actual element to animate this process  */
   #profile-img:hover {
-    transform: translate(5%);
+    transform: translate(300%);
   }
   #header-name {
     margin-left: 2%;
