@@ -7,8 +7,9 @@
     font: 16px Helvetica, Verdana, sans-serif;
     background-color: #ababab;
     color: navy;
+    max-width: 1400px;
   }
-  /* header will be fixed to top of window with position fixed*/
+  /* header will be fixed to top of window with position fixed. z-index is 3 to allow for use of z-index in a tooltip in main section.*/
   header {
     /* font-size: 75%; */
     background-color: dodgerblue;
@@ -17,6 +18,7 @@
     position: fixed;
     top: 0;
     z-index: 3;
+    max-width: 1400px;
   }
   /* navbar container allows contents to align at left and right of header. Will use media queries to align vertically at smaller screen size.*/
   .navBar-container {
@@ -35,17 +37,17 @@
   }
   /* use hover pseudo-element to translate my profile photo to right when hovered over. Transition is used in actual element to animate this process  */
   #profile-img:hover {
-    transform: translate(400px);
+    transform: translate(5%);
   }
   #header-name {
-    margin-left: 15px;
+    margin-left: 2%;
   }
   /* nav element will be a verticle flex-box at all screen sizes, alowing links to be displayed vertically.  */
   nav {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-right: 20px;
+    margin-right: 2%;
   }
   a {
     color: navy;
@@ -149,9 +151,23 @@
         justify-content: center;
         align-items: center;
       }
+      /* at smaller screen sizes there needs to be additional text added to make clear which text elements are nav links (in header) */
+      .align-left {
+        margin-bottom: 20px;
+      }
+      nav {
+        position: relative;
+      }
+      nav::before {
+        position: absolute;
+        top: -40px;
+        margin-top: 20px;
+        content: "Nav links:";
+        text-decoration: underline;
+      }
       /* at smaller screen widths additional top margin is needed to keep main element visible below the fixed header */
       h1 {
-        margin-top: 180px;
+        margin-top: 220px;
       }
   }
   
