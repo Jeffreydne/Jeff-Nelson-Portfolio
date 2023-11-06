@@ -61,7 +61,7 @@ The below HTML and CSS examples show how I use flexbox to make the website align
 This portfolio is designed to give any interested party an idea of websites I have designed in the past, what technologies I have learned and the quality products that I am capable of producing. The homepage of my portfolio is seen on this screenshot
 
 ```md
-![alt text](assets/images/portfolio-screenshot.png)
+![alt text](assets/images/portfolio-photo.jpg)
 ```
 ---
 
